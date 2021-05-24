@@ -73,9 +73,9 @@ public class OperacionesTest {
     @Test
     public void testSumarVector() {
         
-        int[] numeros = null;//{1,4,8};
+        int[] numeros = {1,4,8};
         Operaciones instance = new Operaciones();
-        int expResult = 0;//13;
+        int expResult = 13;
         int result = instance.sumarVector(numeros);
         assertEquals(expResult, result);
         
