@@ -58,15 +58,13 @@ public class OperacionesTest {
      */
     @Test
     public void testMayor() {
-        System.out.println("mayor");
-        int a = 0;
-        int b = 0;
+        int a = 1;
+        int b = 5;
         Operaciones instance = new Operaciones();
-        int expResult = 0;
+        int expResult = 5;
         int result = instance.mayor(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -74,14 +72,13 @@ public class OperacionesTest {
      */
     @Test
     public void testSumarVector() {
-        System.out.println("sumarVector");
-        int[] numeros = null;
+        
+        int[] numeros = null;//{1,4,8};
         Operaciones instance = new Operaciones();
-        int expResult = 0;
+        int expResult = 0;//13;
         int result = instance.sumarVector(numeros);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
