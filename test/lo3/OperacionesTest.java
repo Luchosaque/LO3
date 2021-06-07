@@ -160,5 +160,14 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
-    
+    @Test
+    public void testSumarVector() {
+        System.out.println("sumarVector");
+        int[] numeros = null;
+        Operaciones instance = new Operaciones();
+        int expResult = 0;
+        int result = instance.sumarVector(numeros);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
 }
