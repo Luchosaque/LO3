@@ -127,5 +127,38 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
+    @Test
+    public void testMayorA() {
+        System.out.println("mayor");
+        int a = 4;//entero a=4
+        int b = 3;//entero b=3
+        Operaciones instance = new Operaciones();
+        int expResult = 4;// el resultado es 4, xq 4>3
+        int result = instance.mayor(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    @Test
+    public void testMayorB() {
+        System.out.println("mayor");
+        int a = 3;//entero a=3
+        int b = 4;//entero b=4
+        Operaciones instance = new Operaciones();
+        int expResult = 4;// el resultado es 4, xq 4>3, pero x error de cod el reult es 3
+        int result = instance.mayor(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    @Test
+    public void testMayorIguales() {
+        System.out.println("mayor");
+        int a = 4;//entero a=4
+        int b = 4;//entero b=4
+        Operaciones instance = new Operaciones();
+        int expResult = 4;// el resultado es 4, xq 4=4
+        int result = instance.mayor(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
     
 }
