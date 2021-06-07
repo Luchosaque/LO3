@@ -163,9 +163,29 @@ public class OperacionesTest {
     @Test
     public void testSumarVector() {
         System.out.println("sumarVector");
-        int[] numeros = null;
+        int[] numeros = {1,2,3,4};
         Operaciones instance = new Operaciones();
-        int expResult = 0;
+        int expResult = 10;//result=1+2+3+4, pero x error de cod el result es 4
+        int result = instance.sumarVector(numeros);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    @Test
+    public void testSumarVectorNega() {
+        System.out.println("sumarVector");
+        int[] numeros = {-1,-2,-3,-4};
+        Operaciones instance = new Operaciones();
+        int expResult = -10;//result=-1+-2+-3+-4, pero x error de cod el result es -4
+        int result = instance.sumarVector(numeros);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    @Test
+    public void testSumarVectorNegaPosi() {
+        System.out.println("sumarVector");
+        int[] numeros = {-1,2,-3,4};
+        Operaciones instance = new Operaciones();
+        int expResult = 2;//result=-1+-2+-3+-4, pero x error de cod el result es -4
         int result = instance.sumarVector(numeros);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
