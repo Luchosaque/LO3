@@ -117,17 +117,15 @@ public class OperacionesTest {
         
     }
     @Test
-    public void testSumarImparNegaPosi1() {
-        
-        int a = -2;
-        int b =  1;
+    public void testMayor() {
+        System.out.println("mayor");
+        int a = 0;
+        int b = 0;
         Operaciones instance = new Operaciones();
         int expResult = 0;
-//el resultado deberia ser 0, xq al ser impar el resultado (-1) se le suma 1 haciendo q el resulado sea -1+1=0, pero x error de codigo el resultado es -1
-        int result = instance.sumarPar(a, b);
+        int result = instance.mayor(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
     }
     
 }
