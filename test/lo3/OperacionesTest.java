@@ -42,46 +42,79 @@ public class OperacionesTest {
      */
     @Test
     public void testSumarPar() {
-        System.out.println("sumarPar");
-        int a = 0;
-        int b = 0;
+        
+        int a = 1;
+        int b = 1;
         Operaciones instance = new Operaciones();
-        int expResult = 0;
+        int expResult = 2;//se espera q el resultado sea 2 pero x error de codigo el resultado es 3
         int result = instance.sumarPar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
-
-    /**
-     * Test of mayor method, of class Operaciones.
-     */
+    
     @Test
-    public void testMayor() {
-        System.out.println("mayor");
-        int a = 0;
-        int b = 0;
+    public void testSumarParNega() {
+        
+        int a = -1;
+        int b = -1;
         Operaciones instance = new Operaciones();
-        int expResult = 0;
-        int result = instance.mayor(a, b);
+        int expResult = -2;
+        int result = instance.sumarPar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
-
-    /**
-     * Test of sumarVector method, of class Operaciones.
-     */
     @Test
-    public void testSumarVector() {
-        System.out.println("sumarVector");
-        int[] numeros = null;
+    public void testSumarParNegaPosi() {
+        
+        int a = -3;
+        int b =  1;
         Operaciones instance = new Operaciones();
-        int expResult = 0;
-        int result = instance.sumarVector(numeros);
+        int expResult = -2;
+        int result = instance.sumarPar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+    }
+    @Test
+    public void testSumarImpar() {
+        
+        int a = 2;
+        int b = 1;
+        Operaciones instance = new Operaciones();
+        int expResult = 4;
+//el resultado deberia ser 4, xq al ser impar el resultado (3) se le suma 1 haciendo q el resulado sea 3+1=4, pero x error de codigo el resultado es 3
+        int result = instance.sumarPar(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
+    @Test
+    public void testSumarImparNega() {
+        
+        int a = -2;
+        int b = -1;
+        Operaciones instance = new Operaciones();
+        int expResult = -2;
+//el resultado deberia ser -2, xq al ser impar el resultado (-3) se le suma 1 haciendo q el resulado sea -3+1=-2, pero x error de codigo el resultado es -3
+        int result = instance.sumarPar(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
+    @Test
+    public void testSumarImparNegaPosi() {
+        
+        int a = -2;
+        int b =  1;
+        Operaciones instance = new Operaciones();
+        int expResult = 0;
+//el resultado deberia ser 0, xq al ser impar el resultado (-1) se le suma 1 haciendo q el resulado sea -1+1=0, pero x error de codigo el resultado es -1
+        int result = instance.sumarPar(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
     }
     
 }
